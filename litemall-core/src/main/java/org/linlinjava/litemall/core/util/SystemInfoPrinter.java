@@ -26,13 +26,15 @@ public class SystemInfoPrinter {
 
     private static void setMaxSize(Map<String, String> infos) {
         for (Map.Entry<String, String> entry : infos.entrySet()) {
-            if (entry.getValue() == null)
+            if (entry.getValue() == null) {
                 continue;
+            }
 
             int size = entry.getKey().length() + entry.getValue().length();
 
-            if (size > maxSize)
+            if (size > maxSize) {
                 maxSize = size;
+            }
         }
 
         maxSize = maxSize + 30;
@@ -60,8 +62,9 @@ public class SystemInfoPrinter {
     }
 
     private static void printLine(String head, String line) {
-        if (line == null)
+        if (line == null) {
             return;
+        }
 
         if (head.startsWith(CREATE_PART_COPPER)) {
             logger.info("");

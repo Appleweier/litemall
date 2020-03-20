@@ -20,7 +20,7 @@ Resources:
           # todo: 替换成自己的 mysql 的 username
           SPRING_DATASOURCE_DRUID_USERNAME: root
           # todo: 替换成自己的 mysql 的 password
-          SPRING_DATASOURCE_DRUID_PASSWORD: password
+          SPRING_DATASOURCE_DRUID_PASSWORD: root
       Events:
         httpTrigger:
           Type: HTTP
